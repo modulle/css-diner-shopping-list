@@ -1,0 +1,128 @@
+* {
+	padding: 0;
+	margin: 0;
+	transition: all .1s ease-in;
+}
+
+html {
+	height: 100%;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+	font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+	background-color: #3b3f45;
+	border: 20px solid white;
+	box-sizing: border-box;
+ }
+
+.ba-header {
+	background-color: #4a4f56;
+	color: #eb7e7f;
+	text-align: center;
+	padding: 20px;
+}
+
+.ba-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 30px 20px;
+}
+
+.title {
+	font-size: 40px;
+	margin-bottom: 6px;
+}
+
+.subtitle {
+	font-size: 26px;
+	font-weight: normal;
+}
+
+.ba-shopping-list {
+	list-style-type: none;
+	font-size: 26px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.ba-shopping-list li:nth-child(2n) {
+	background-color: #7a7593;
+}
+
+.ba-shopping-list label {
+	display: block;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.ba-shopping-list li {
+	background-color: #88839e;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+}
+
+.ba-shopping-list li:hover {
+	border-top-color: white;
+	border-bottom-color: white;
+	background-color: #625e77;
+}
+
+.ba-shopping-list li:active {
+	background-color: #eb7e7f;
+}
+
+.ba-shopping-list [type="checkbox"] {
+	display: none;
+}
+
+.ba-shopping-list label:before {
+	content: " ";
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	margin-right: 10px;
+	border: 2px solid white;
+}
+
+.ba-shopping-list [type="checkbox"]:checked + label:before {
+	background: #FFF url("../check-x.png") 50% 50%;
+
+}
+
+
+.ba-shopping-list [type="checkbox"]:checked ~ label {
+	text-decoration: line-through;
+	color: #a5a1af;
+}
+
+.ba-shopping-list [type="checkbox"]:checked + label small {
+	color: #a5a1af;
+}
+
+.ba-footer {
+	background-color: #4a4f56;
+	color: #eb7e7f;
+	text-align: center;
+	font-size: 25px;
+	padding: 20px 0;
+}
+
+.ba-shopping-list small {
+	color: #cdcbd4;
+	font-size: 15px;
+}
+
+.ba-shopping-list small:before {
+	content: "( "
+}
+
+.ba-shopping-list small:after {
+	content: " )"
+}
